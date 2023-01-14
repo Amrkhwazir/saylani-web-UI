@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* navbar */
+
+.upperNavbar{
+    color: grey;
+background-color: rgb(235, 233, 233);
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 40px;
+padding: 8px 50px;
+}
+.detail1{
+    display: flex;
+    gap: 30px;
+}
+.detail2 p{
+    padding: 3px 20px;
+background-color: ghostwhite;
+}
+.detail1 a{
+    color: grey;
+    text-decoration: none;
+}
+
+/* lower navbar */
+
+.lowerNavbar{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* margin-top: 5px; */
+    padding: 0 40px;
+    box-shadow: 0px 1px 3px 0px grey;
+}
+.logo img{
+    width: 180px;
+    height: 50px;
+    margin-right: 50px;
+}
+.lowerNavbar ul{
+    margin: 18px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.lowerNavbar ul li{
+    list-style-type: none;
+}
+.lowerNavbar ul li a{
+    text-decoration: none;
+    color: grey;
+}
+.lowerNavbar button{
+    margin-top: 8px;
+    height: 40px;
+    width: 120px;
+    background-color: #197fd8;
+    border: none;
+    border-radius: 5px;
+}
+.lowerNavbar button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* body section */
+.box1{
+    background-image: url(./images/carousal_background.d77d94e41c5a71ae581f.png);
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    padding: 40px 80px;
+    color: #000000d9;
+
+}
+.box1 .para1{
+    width: 50%;
+    height: 400px;
+    margin-top: 30px;
+    
+}
+.box1 .para1 h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.box1 .para1 span{
+   color: #8dc63f; 
+}
+.box1 .para1 h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+} 
+.box1 .para1 p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.box1 .para1 button{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid #000000d9 ;
+    border-radius: 3px;
+}
+.box1 .para1 button a{
+    text-decoration: none;
+    color: #000000d9;
+}
+.image1{
+    width: 40%;
+    height: 400px;
+
+}
+.image1 img{
+    width: 500px;
+    height: 450px;
+}
+.box2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ecf8dc;
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    padding: 15px 0px;
+    border-radius: 3px;
+}
+.para2{
+    padding-left: 5px;
+    height: 80px;
+    width: 25%;
+    font-size: 23px;
+}
+.para2 p{
+    color: #197fd8;
+    font-weight: 600;
+}
+.btn{
+    width: 70%;
+    padding: 20px 20px;
+
+}
+.btn button{
+    color: #000000d9;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn button a{
+    color: #000000d9;
+}
+.e-btn{
+    width: 160px;
+    height: 55px;
+    
+}
+.f-btn{
+    width: 110px;
+    height: 55px;
+}
+#d-btn{
+    background-color: #8dc63f;
+    border: none;
+}
+#d-btn a{
+    color: white ;
+    font-size: 16px;
+
+}
+#h-btn{
+    background-color: #000000d9;
+}
+#h-btn a{
+    color: white;
+}
+
+.btn button a{
+    text-decoration: none;
+}
+
+/* 2nd body image */
+
+.box3{
+    width: 80%;
+    height: 450px;   
+    margin: 10px auto;
+}
+.image2 img{
+    width: 100%;
+    height: 450px;
+}
+/* services */
+.box4{
+    width: 80%;   
+    height: 250px;
+    margin: 20px auto;
+}
+.para3 p{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
+.icons .iconImage{
+    text-align: center;
+    background-color: #eff3e9;
+    padding: 20px 40px;
+    border-radius: 5px;
+    
+}
+.icons .iconImage img{
+    width: 60px;
+    height: 80px;
+}
+
+/* cards */
+
+.box5{
+    flex-wrap: wrap;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;   
+    height: 330px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.cardimg1{
+
+    background-color: black;
+    width: 325px;
+    height: 310px;    
+}
+.cardimg1 img{
+    width: 325px;
+    height: 310px;
+    border-radius: 5px;
+}
+.s-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+    width: 32%;
+    padding: 0px 10px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    
+}
+.s-box1  h2{
+    font-size: 20px;
+}
+.s-box1 button{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #8dc63f;
+    margin-top: 15px;
+    padding:10px;
+}
+
+.cardimg2 img{
+    width: 325px;
+    height: 310px;
+    border-radius: 5px;
+}
+.s-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+    width: 32%;
+    padding: 0px 10px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    
+}
+.s-box2  h2{
+    font-size: 20px;
+}
+.s-box2 button{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #8dc63f;
+    margin-top: 15px;
+    padding:10px;
+}
+
+.cardimg3 img{
+    width: 325px;
+    height: 310px;
+    border-radius: 5px;
+}
+.s-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+    width: 32%;
+    padding: 0px 10px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    
+}
+.s-box3  h2{
+    font-size: 20px;
+}
+.s-box3 button{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #8dc63f;
+    width: 100%;
+    margin-top: 15px;
+    padding:10px;
+}
+
+/* projectBox1 */
+
+.projectBox{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 460px;
+    margin: 30px auto;
+    
+}
+
+.projectBox .pBox1{
+    position: relative;
+    width: 50%;
+    height: 380px;
+    margin-top: 10px;
+}
+
+.projectBox .pBox1 img{
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 60px;
+}
+.pBox1 .tranperantBox1{
+    color: white;
+    align-items: center;
+    background-color: #8dc63f!important;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top-left-radius: 60px;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    font-size: 23px;
+}
+.pBox1 .tranperantBox2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    border-bottom: 1px solid #fff;
+}
+.pBox1 .tranperantBox3{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    border-right: 1px solid #fff;
+}
+.pBox2{
+    width: 50%;
+    height: 430px;
+    margin-bottom: 30px;
+}
+.pBox2 h1{
+    font-size: 35px;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.pBox2 .hepatits{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    /* background-color: #197fd8; */
+    width: 100%;
+    height: 25%;
+    padding: 20px 15px;
+}
+.hepatits img{
+    background-color: #eeeeee;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    padding: 6px 5px;
+}
+.detailBox1{
+    line-height: 1.2;
+}
+.detailBox1 h3{
+    color: #0d6db7;
+}
+
+/* multiple project */
+
+.projectBox2{ 
+    background-color: #197fd8;
+    width: 85%;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px ;
+    
+}
+.projectBox2::before{
+    background-image: url(./images/BACKGROUND\ WAVE.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.2;
+}
+.projectBox2 .icons{
+    width: 120px;
+    height: 120px;
+    background-color: white ;
+    border-radius: 50%;
+    padding: 32px 0px;
+    color: white;
+    text-align: center;
+    
+
+} 
+.projectBox2 .icons h1{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.projectBox2 .icons p{
+    margin-left: 20px;
+}
+.icons img{
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+    
+}
