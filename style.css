@@ -14,7 +14,7 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 height: 40px;
-padding: 8px 50px;
+padding: 8px 90px;
 }
 .detail1{
     display: flex;
@@ -37,7 +37,7 @@ background-color: ghostwhite;
     width: 100%;
     height: 60px;
     /* margin-top: 5px; */
-    padding: 0 40px;
+    padding: 0 80px;
     box-shadow: 0px 1px 3px 0px grey;
 }
 .logo img{
@@ -65,6 +65,10 @@ background-color: ghostwhite;
     background-color: #197fd8;
     border: none;
     border-radius: 5px;
+    transition: 0.8s all ease;
+}
+.lowerNavbar button:active{
+    transform: scale(0.9);
 }
 .lowerNavbar button a{
     text-decoration: none;
@@ -134,29 +138,42 @@ background-color: ghostwhite;
     width: 80%;
     height: 150px;
     margin: 20px auto;
-    padding: 15px 0px;
+    padding: 10px 0px;
     border-radius: 3px;
 }
 .para2{
-    padding-left: 5px;
+    padding-left: 10px;
     height: 80px;
-    width: 25%;
-    font-size: 23px;
+    width: 200px;
+    height: 130px;
+    /* border: 1px solid black; */
+}
+.para2 h2{
+    font-size: 30px;
 }
 .para2 p{
+    /* border: 1px solid red; */
     color: #197fd8;
+    font-size: 18px;
     font-weight: 600;
 }
 .btn{
-    width: 70%;
-    padding: 20px 20px;
+    /* border: 1px solid red; */
+    width: 75%;
+    padding: 40px 20px;
 
 }
 .btn button{
+    cursor: pointer;
     color: #000000d9;
     background-color: white;
     border: none;
+    margin-left: 8px;
     border-radius: 5px;
+    transition: 1s all ease;
+}
+.btn button:hover{
+    transform: scale(0.9);
 }
 .btn button a{
     color: #000000d9;
@@ -214,21 +231,32 @@ background-color: ghostwhite;
 }
 .icons{
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     margin-top: 30px;
+    width: 100%;
+    height: 180px;
     flex-wrap: wrap;
+    /* border: 1px solid black; */
     
 }
-.icons .iconImage{
-    text-align: center;
+.iconImage{
+    position: relative;
+    width: 150px;
+    height: 170px;
     background-color: #eff3e9;
-    padding: 20px 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     
 }
-.icons .iconImage img{
-    width: 60px;
-    height: 80px;
+.iconImage img{
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    top: 40px;
+    right: 45px;
+}
+.iconImage p{
+    text-align: center;
+    padding-top:130px;
 }
 
 /* cards */
@@ -483,5 +511,86 @@ background-color: ghostwhite;
     width: 60px;
     height: 60px;
     margin-bottom: 40px;
-    
+}
+
+/* Review Section */
+
+.reviews{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 85%;
+    height: 500px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+.title{
+color: #8dc63f;
+font-size: 16px;
+margin-bottom: 10px;
+letter-spacing: 1px;
+}
+.reviews h1{
+    font-size: 32px;
+}
+.reviewBox{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 450px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    padding-top: 50px;
+}
+.image{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+}
+.image img{
+   width: 100%;
+   height: 100%; 
+   border-radius: 50%;
+}
+.reviewBox h2{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: #197fd8;
+    font-weight: 500;
+}
+.reviewBox p{
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.desc{
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    width: 90%;
+    line-height: 1.6;
+}
+
+.prev{
+    position: absolute;
+    bottom: -50px;
+    left: 480px;
+    cursor: pointer;
+    font-size: 56px;
+    border-radius: 12px;
+    transition: 0.8s all ease;
+}
+
+.next{
+    position: absolute;
+    bottom: -50px;
+    cursor: pointer;
+    font-size: 56px;
+    border-radius: 12px;
+    transition: 0.8s all ease;
+}
+ i:active{
+    transform: scale(0.8);
+}
+.next{
+    color: #8dc63f;
 }
